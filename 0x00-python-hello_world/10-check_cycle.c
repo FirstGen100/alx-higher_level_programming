@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdbool.h>
 /**
  * check_cycle - check if there is a cycle in the list
  * @head: start if list

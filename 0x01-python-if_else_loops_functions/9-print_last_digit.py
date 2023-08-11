@@ -6,6 +6,5 @@ def print_last_digit(number):
         ptr = 1
     last_digit = number % 10
     if ptr == 1:
-        last_digit *= -1
-        ptr = 0
+        number *= -1
     return last_digit

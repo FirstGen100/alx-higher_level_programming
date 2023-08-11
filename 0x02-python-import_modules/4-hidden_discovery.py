@@ -1,8 +1,13 @@
 #/usr/bin/python3
-import hidden_4
+import dis
 
 if __name__ == '__main__':
-    name = dir(hidden_4)
-    for i in name:
-        if i[:2] != '__':
-            print('{:s}'.format(i))
+    module = open("hidden_4.pyc", "rb").read()
+    ins = dis.get_instructions(module)
+    names = set()
+
+    for i in ins:
+        if i.opname == "LOAD_NAME" and not i.argval.startswith("__"):
+            names.add(i.argval)
+    for name in sorted(names):
+        print(name)

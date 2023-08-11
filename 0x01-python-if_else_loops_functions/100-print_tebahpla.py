@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 x = 122
 while x >= 97:
     flag = 0

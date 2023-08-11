@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 for i in range(10):
     for x in range(i + 1, 10):
-        print(f"{i:d}{x:d}", end=", ")
-print()
+        if i == 8 and x == 9:
+            print("{:d}{:d}".format(i, x))
+        else:
+            print("{:d}{:d}".format(i, x), end=", ")

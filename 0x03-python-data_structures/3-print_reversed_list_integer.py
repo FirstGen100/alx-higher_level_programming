@@ -5,3 +5,4 @@ def print_reversed_list_integer(my_list=[]):
         print('{:d}'.format(my_list[-count]), end="")
         print()
         count += 1
+    return count

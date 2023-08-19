@@ -3,6 +3,8 @@ def best_score(a_dictionary):
     max_val = float('-inf')
     m_key = None
 
+    if a_dictionary.keys() is None:
+        return 'None'
     for key, value in a_dictionary.items():
         if value > max_val:
             max_val = value

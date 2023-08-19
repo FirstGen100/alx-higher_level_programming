@@ -8,18 +8,40 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int len, i, len1, j;
-	listint_t *ptr, *temp;
+	listint_t *ptr;
 
-	for (len = 0, temp = *head; temp; len++, temp = temp->next)
-		;
-	len1 = len;
-	for (i = 0, temp = *head; i < len1 / 2; i++, temp = temp->next, len1--)
-	{
-		for (ptr = *head, j = 0; j < len1 - 1; j++, ptr = ptr->next)
-			;
-		if (ptr->n != temp->n)
-			return (0);
-	}
-	return (1);
+	if (head == NULL)
+		return (0);
+	if (*head == NULL || (*head)->next == NULL)
+		return (1);
+	ptr = *head;
+
+	if (check(*head, ptr))
+		return (1);
+	else
+		return (0);
+}
+/**
+ * check - check for palindrom in list
+ * @head: start
+ * @temp: pointer
+ * Return: 1 if palindrome else 0
+ */
+listint_t *check(listint_t *head, listint_t *temp)
+{
+	listint_t *var;
+
+	if (temp == NULL)
+		return (head);
+
+	var = check(head, temp->next);
+	if (var == NULL)
+		return (NULL);
+	if (var->n == temp->n && var->next)
+		return (var->next);
+	else if (var->n == head->n)
+		return (var);
+	else
+		return (NULL);
+	return (NULL);
 }

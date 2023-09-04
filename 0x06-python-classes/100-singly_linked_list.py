@@ -4,6 +4,9 @@ defines a node of a singly linked list
 """
 
 class Node:
+    """
+    defines the node of a singly linked list
+    """
     def __init__(self, data, next_node=None):
         """
         initialise class variables
@@ -52,6 +55,9 @@ Creates a singly linked list
 
 
 class SinglyLinkedList:
+    """
+    define a singly linked list
+    """
     def __init__(self):
         """
         initialise the list variables

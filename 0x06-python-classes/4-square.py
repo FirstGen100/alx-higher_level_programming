@@ -12,11 +12,25 @@ class Square:
         """
         initialise the size of the square
         """
-        if type(size) != int:
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
         self.__size = size
+
+    @property
+    def size(self):
+        """
+        get the private sze attribute
+        """
+        return self.__size
+
+    @size.setter
+    def size(self, width):
+        """
+        Set the value for size
+        """
+        if not isinstance(width, int):
+            raise TypeError("size must be an integer")
+        if width < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = width
 
     def area(self):
         """

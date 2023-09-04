@@ -5,6 +5,8 @@ empty class to define a rectangle
 
 
 class Rectangle:
-    """ Define an empty rectangle"""
+    """
+    Define an empty rectangle
+    """
     pass
 

@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """Square Class
 Define a square based on 1-square.py
 """

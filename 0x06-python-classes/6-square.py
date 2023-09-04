@@ -60,10 +60,11 @@ class Square:
         """
         prints in stdout the square wuth the char # or an wmpty line
         """
-        if self.size == 0 and position[1] <= 0:
-            print()
+        if self.size == 0:
+            print('')
             return
-        for x in range(self.size):
-            for y in range(self.size):
-                print('#', end="")
-            print()
+        [print('') for i in range(0, self.position[1])]
+        for i in range(0, self.size):
+            [print(' ', end='') for x in range(0, self.position[0])]
+            [print('#', end='') for y in range(0, self.size)]
+            print('')

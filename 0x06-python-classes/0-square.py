@@ -3,4 +3,5 @@
 An empty square class
 """
 class Square:
+    """Define the square blueprint"""
     pass

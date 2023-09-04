@@ -2,6 +2,8 @@
 """Square Class
 Define a square based on 1-square.py
 """
+
+
 class Square:
     """
     Define a square blueprint

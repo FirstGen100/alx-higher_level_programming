@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Rectangle Class
+"""Rectangle Class
 empty class to define a rectangle
 """
 

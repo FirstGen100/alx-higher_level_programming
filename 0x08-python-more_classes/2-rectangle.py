@@ -7,20 +7,11 @@ empty class to define a rectangle
 class Rectangle:
     """ Define an empty rectangle"""
     def __init__(self, width=0, height=0):
-        '''initialise class variables'''
-        if not isinstance(width, int):
-            raise TypeError('width must be an integer')
-        elif width < 0:
-            raise ValueError('width must be >= 0')
-        else:
-            self.__width = width
-
-        if not isinstance(height, int):
-            raise TypeError('Height must be an integer')
-        elif height < 0:
-            raise ValueError('Height must be >= 0')
-        else:
-            self.__height = height
+        '''
+        initialise class variables
+        '''
+        self.__width = width
+        self.__height = height
     
     @property
     def height(self):
@@ -62,12 +53,12 @@ class Rectangle:
         '''
         find the area of the rectangle
         '''
-        return length * width
+        return self.height * self.width
     def perimeter(self):
         '''
         find the rectagle perimeter
         '''
-        if length == 0 or width == 0:
+        if self.height == 0 or self.width == 0:
             return 0
         else:
-            return (length + width) * 2
+            return (self.height + self.width) * 2

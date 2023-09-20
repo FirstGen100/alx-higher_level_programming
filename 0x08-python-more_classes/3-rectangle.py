@@ -63,14 +63,23 @@ class Rectangle:
         '''
         find the area of the rectangle
         '''
-        return length * width
+        return self.__height * self.__width
 
     def perimeter(self):
         '''
         find the rectagle perimeter
         '''
-        if length == 0 or width == 0:
+        if self.__height == 0 or self.__width == 0:
             return 0
         else:
-            return (length + width) * 2
+            return (self.__height + self.__width) * 2
 
+    def __str__(self):
+        '''
+        Returns the string
+        '''
+        rep_str = ''
+        if self.__width != 0 and self.__height != 0:
+            rep_str += '\n'.join('#' * self.__width
+                    for i in range(self.__height))
+            return rep_str

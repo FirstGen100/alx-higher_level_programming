@@ -9,4 +9,3 @@ class Rectangle:
     Define an empty rectangle
     """
     pass
-

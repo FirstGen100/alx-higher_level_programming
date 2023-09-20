@@ -4,6 +4,7 @@ Rectangle Class
 empty class to define a rectangle
 """
 
+
 class Rectangle:
     """ Define an empty rectangle"""
     def __init__(self, width=0, height=0):
@@ -20,7 +21,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = height
-    
+
     @property
     def width(self):
         '''
@@ -39,7 +40,7 @@ class Rectangle:
             raise ValueError('width must be >= 0')
         else:
             self.__width = value
-    
+
     @property
     def height(self):
         '''

@@ -80,10 +80,9 @@ class Rectangle:
         '''
         Returns the string
         '''
+        if self.__width == 0 or self.__height == 0:
+            return ''
         rep_str = ''
-        if self.__width != 0 and self.__height != 0:
-            rep_str += '\n'.join('#' * self.__width
-                            for i in range(self.__height))
-            return rep_str
-        else:
+        for _ in range(self.__height):
+            rep_str += '#' * self.__width + '\n'
             return rep_str

@@ -1,0 +1,30 @@
+The module has only the function ``say_my_name``
+
+Numbers
+=======
+``say_my_name`` writes My name is <first_name> <last_name>
+
+Normal Operation.
+::
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name('John', 'smith')
+	My name is John smith
+
+Invalid number if arguments.
+::
+	>>> say_my_name()
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Wrong type of arguments.
+::
+	>>> say_my_name('hey', 12)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+	>>> say_my_name(12, 'hey')
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string

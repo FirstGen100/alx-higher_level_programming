@@ -5,6 +5,14 @@ print(add_integer(1, 2))
 print(add_integer(100, -2))
 print(add_integer(2))
 print(add_integer(100.3, -2))
+'''
+test values
+'''
+print(add_integer('hey', 'you'))
+print(add_integer(3, 'dude'))
+print(add_integer('dude', 3))
+print(add_integer(4))
+print(add_integer())
 try:
     print(add_integer(4, "School"))
 except Exception as e:

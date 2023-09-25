@@ -3,15 +3,17 @@
 '''
 module to add integers
 '''
-def add_integer(a, b=98):
+def add_integer(a, b):
     '''
     function to add integers
     '''
-    if isinstance(a, float) or isinstance(b, float):
+    if type(a) is float:
         a = int(a)
+    if type(b) is float:
         b = int(b)
-    if not isinstance(a, int) or isinstance(a, bool):
+    if not isinstance(a, int):
         raise TypeError('a must be an integer')
-    elif not isinstance(b, int) or isinstance(b, bool):
+    elif not isinstance(b, int):
         raise TypeError('b must be an integer')
-    return (a + b)
+    else:
+        return (a + b)

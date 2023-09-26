@@ -14,7 +14,7 @@ def text_indentation(text):
     else:
         text = text.strip()
         for x in text:
-            if flag == 1 and x == '':
+            if flag == 1 and x == ' ':
                 continue
             else:
                 flag = 0

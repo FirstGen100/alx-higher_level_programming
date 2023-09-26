@@ -4,7 +4,7 @@ prints a text with 2 new lines after the characters . , ? and :
 '''
 
 
-def  text_indentation(text):
+def text_indentation(text):
     '''
     adds 2 new lines after the characters ., ? and :
     '''
@@ -13,6 +13,7 @@ def  text_indentation(text):
     for x in text:
         if x == '.' or x == '?' or x == ':':
             print(x)
+            print()
             print()
         else:
             print(x, end='')

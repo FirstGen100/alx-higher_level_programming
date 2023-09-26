@@ -8,12 +8,17 @@ def text_indentation(text):
     '''
     adds 2 new lines after the characters ., ? and :
     '''
+    flag = 1
     if not isinstance(text, str):
         raise TypeError('text must be a string')
-    for x in text:
-        if x == '.' or x == '?' or x == ':':
-            print(x)
-            print()
-            print()
-        else:
+    else:
+        text = text.strip()
+        for x in text:
+            if flag == 1 and x == '':
+                continue
+            else:
+                flag = 0
             print(x, end='')
+            if x in ['.', '?', ':']:
+                print('\n')
+                flag = 1

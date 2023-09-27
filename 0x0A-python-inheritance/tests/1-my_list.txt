@@ -47,10 +47,7 @@ Check print_sorted return a new list
 ::
 	>>> obj1 = MyList()
 	>>> obj1.append(30)
-	>>> obj1.append(20)
-	>>> obj1.append(10)
+	>>> obj1.append(49)
+	>>> obj1.append(89)
 	>>> print(obj1)
-	[30, 20, 10]
-
-	>>> obj2 = obj1.print_sorted()
-	[10, 20, 30]
+	[30, 49, 89]

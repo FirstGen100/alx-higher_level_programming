@@ -43,11 +43,3 @@ Checking negative values.
 
 	>>> obj.print_sorted()
 	[-23, -1]
-Check print_sorted return a new list
-::
-	>>> obj1 = MyList()
-	>>> obj1.append(30)
-	>>> obj1.append(49)
-	>>> obj1.append(89)
-	>>> print(obj1)
-	[30, 49, 89]

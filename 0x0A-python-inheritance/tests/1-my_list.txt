@@ -30,6 +30,9 @@ Checking empty object.
 	>>> print(obj)
 	[]
 
+	>>> obj.print_sorted()
+	[]
+
 Checking negative values.
 ::
 	>>> obj = MyList()
@@ -37,3 +40,11 @@ Checking negative values.
 	>>> obj.append(-1)
 	>>> print(obj)
 	[-23, -1]
+
+	>>> obj.print_sorted()
+	[-23, -1]
+Checking method docstring
+::
+	>>> meth = __import__('1-my_list').MyList.print_sorted.__doc__
+	>>> len(meth) > 1
+	True

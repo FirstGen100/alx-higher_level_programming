@@ -6,13 +6,13 @@ Import the class.
 
 Checking for class docstring.
 ::
-	>>> cl = __import('1-my_list').__doc__
+	>>> cl = __import__('1-my_list').__doc__
 	>>> len(cl) > 1
 	True
 
 Check the method docstring.
 ::
-	>>> meth2 = __import__('1-my_list').MyList.print_sorted.__doc
+	>>> meth2 = __import__('1-my_list').MyList.print_sorted.__doc__
 	>>> len(meth2) > 1
 	True
 

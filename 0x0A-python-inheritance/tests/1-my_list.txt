@@ -55,5 +55,5 @@ Check print_sorted return a new list
 	>>> obj2 = obj1.print_sorted()
 	[10, 20, 30]
 
-	>>> print(obj1 = obj2)
+	>>> print(obj1 == obj2)
 	False

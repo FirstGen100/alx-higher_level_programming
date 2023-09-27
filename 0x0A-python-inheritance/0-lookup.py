@@ -1,3 +1,6 @@
 #!/usr/bin/python3
+'''
+returns a list of available attributes
+'''
 def lookup(obj):
-    return sorted(dir(obj))
+    return dir(obj)

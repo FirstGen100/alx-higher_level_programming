@@ -42,6 +42,7 @@ class Rectangle(BaseGeometry):
 
 '''square class'''
 
+
 class Square(Rectangle):
     '''class square'''
 

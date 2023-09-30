@@ -57,7 +57,7 @@ class Base:
             dummyinstance = cls()
         dummyinstance.update(**dictionary)
         return dummyinstance
-    
+ 
     @classmethod
     def load_from_file(cls):
         '''

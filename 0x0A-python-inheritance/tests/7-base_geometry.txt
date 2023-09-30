@@ -56,6 +56,7 @@ Testing the integer_validator.
 	IndexError: string index out of range
 
 	>>> bg.integer_validator('age', True)
+
 	>>> bg.integer_validator('age', {3, 4})
 	Traceback (most recent call last):
 	...

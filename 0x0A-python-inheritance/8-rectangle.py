@@ -16,9 +16,9 @@ class BaseGeometry:
             raise TypeError(f'{name} must be an integer')
         if value <= 0:
             raise ValueError(f'{name} must be greater than 0')
-
-
 '''rectangle class'''
+
+
 class Rectangle(BaseGeometry):
     '''class inherits from BaseGeometry'''
 

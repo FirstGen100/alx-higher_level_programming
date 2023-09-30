@@ -14,6 +14,8 @@ def class_to_json(obj):
     elif isinstance(obj, list):
         return [class_to_json(item) for item in obj]
     elif isinstance(obj, dict):
-        return {class_to_json(key): class_to_json(value) for key, value in obj.items()}
+        return {class_to_json(key): class_to_json(value)
+                for key, value in obj.items()}
     else:
-        return {class_to_json(key): class_to_json(value) for key, value in obj.__dict__.items()}
+        return {class_to_json(key): class_to_json(value) 
+                for key, value in obj.__dict__.items()}

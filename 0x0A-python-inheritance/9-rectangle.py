@@ -20,6 +20,7 @@ class BaseGeometry:
 
 '''rectangle class'''
 
+
 class Rectangle(BaseGeometry):
     '''class rectangle'''
 

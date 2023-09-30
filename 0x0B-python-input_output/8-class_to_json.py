@@ -17,5 +17,5 @@ def class_to_json(obj):
         return {class_to_json(key): class_to_json(value)
                 for key, value in obj.items()}
     else:
-        return {class_to_json(key): class_to_json(value) 
+        return {class_to_json(key): class_to_json(value)
                 for key, value in obj.__dict__.items()}

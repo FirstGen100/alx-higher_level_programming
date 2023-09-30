@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import json
-
-
 '''
 functionto return json rep of an object
 '''
+
+
+import json
 
 
 def to_json_string(myobj):

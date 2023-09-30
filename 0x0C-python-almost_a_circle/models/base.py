@@ -39,6 +39,6 @@ class Base:
         return list of the json representation
         '''
 
-        if json_string is None:
-            return '[]'
+        if json_string is None or len(json_string) == 0:
+            return []
         return json.loads(json_string)

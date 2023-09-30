@@ -22,7 +22,7 @@ class Rectangle(BaseGeometry):
     '''class inherits from BaseGeometry'''
 
     def __init__(self, width, height):
-        super().__init__(self, 'width', width)
-        super().__init__(self, 'height', height)
+        super().integer_validator('width', width)
+        super().integer_validator('height', height)
         self.__height = height
         self.__width = width

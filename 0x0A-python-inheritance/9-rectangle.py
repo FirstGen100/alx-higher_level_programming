@@ -7,7 +7,7 @@ class BaseGeometry:
 
     def area(self):
         '''returns area'''
-        return width * height
+        raise Exception('area() is not implemented')
 
     def integer_validator(self, name, value):
         '''validates the value'''
@@ -17,15 +17,23 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError(f'{name} must be greater than 0')
 
+
 '''rectangle class'''
+
 class Rectangle(BaseGeometry):
-    '''class inherits from BaseGeometry'''
+    '''class rectangle'''
 
     def __init__(self, width, height):
-        if BaseGeometry.integer_validator(self, 'width', width):
-            self.__width = width
-        if BaseGeometry.integer_validator(self, 'height', height):
-            self.__height = height
+        super().integer_validator('width', width)
+        super().integer_validator('height', height)
+        self.__width = width
+        self.__height = height
+
+    def area(self):
+        return self.__width * self.__height
 
     def __str__(self):
-        print(f'[Rectangle] {self.__height} {self.__width}')
+        return f'[Rectangle] {self.__width} / {self.__height}'
+
+    def __repr__(self):
+        return str(self)

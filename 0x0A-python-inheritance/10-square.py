@@ -8,8 +8,8 @@ class Square(Rectangle):
     '''class square'''
 
     def __init__(self, size):
-        self.__size = size
         super().__init__(size, size)
+        self.integer_validator('width', size)
         self.__size = size
 
     def __str__(self):

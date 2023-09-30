@@ -5,7 +5,6 @@ The base class
 import json
 
 
-
 class Base:
     '''class base'''
 
@@ -15,5 +14,5 @@ class Base:
         if id is not None:
             self.id = id
         else:
-           Base.__nb_objects += 1
-           self.id = Base.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects

@@ -3,6 +3,7 @@
 Defines a rectnagle
 '''
 
+
 class Rectangle:
     '''
     Define a rectangle and set the properties

@@ -3,6 +3,7 @@
 Empty rectangle class
 '''
 
+
 class Rectangle:
     '''
     Empty ractangle class

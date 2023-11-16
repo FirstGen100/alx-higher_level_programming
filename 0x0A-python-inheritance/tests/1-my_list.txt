@@ -4,7 +4,7 @@ Import the class:
 >>> MyList = __import__("1-my_list").MyList
 
 Check module docstring:
->>> m = __import__('1-mylist').MyList.__doc__
+>>> m = __import__("1-mylist").MyList.__doc__
 >>> len(m) > 1
 True
 

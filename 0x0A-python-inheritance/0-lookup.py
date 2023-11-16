@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''returns the list if an indect'''
 
 
 def lookup(obj):

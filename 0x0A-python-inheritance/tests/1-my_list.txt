@@ -9,7 +9,7 @@ Check module docstring:
 True
 
 Check class dostring:
->>> c = __import__(1-my_list').MyList.__doc__
+>>> c = __import__('1-my_list').MyList.__doc__
 >>> len(c) > 1
 True
 

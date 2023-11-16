@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+''' checks if object and class types match '''
 
 
 def is_same_class(obj, a_class):

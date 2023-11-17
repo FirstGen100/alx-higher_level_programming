@@ -22,7 +22,7 @@ class Rectangle:
             raise ValueError('height must be >= 0')
         else:
             self.__height = height
-                                                                                                                    
+
     @property
     def width(self):
         return self.__width
@@ -46,7 +46,7 @@ class Rectangle:
         if value < 0:
             raise ValueError('height must be >= 0')
         self.__height = value
-    
+
     def area(self):
         ''' returns the area of the rectagle '''
 
@@ -56,4 +56,3 @@ class Rectangle:
         ''' returns the erimeter of the rectangle '''
 
         return 2 * (self.__height + self.__width)
-

@@ -58,6 +58,6 @@ class Rectangle:
 
     def __repr__(self):
         '''return repr of an obj that can be used by eval to create new obj'''
-        string = 'Rectangle' + '(' + str(self.__width) + ','
+        string = 'Rectangle' + '(' + str(self.__width) + ', '
         string += str(self.__height) + ')'
         return string

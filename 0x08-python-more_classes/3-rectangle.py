@@ -50,10 +50,8 @@ class Rectangle:
         return 2 * (self.__height + self.__width)
     
     def __str__(self):
-        if self.__width == 0 or self.__height == 0:
-            return ''
-        rectangle = ''
-        for i in range(self.__height):
-            rectangle += '#' * self.__width + '\n'
-            return rectangle
-
+        string = ''
+        if self.__width != 0 and self.__height != 0:
+            string += '\n'.join('#' * self.__width
+                    for i in range(self.__height))
+        return string

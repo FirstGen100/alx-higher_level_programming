@@ -9,6 +9,7 @@ class Rectangle:
     Define a rectangle and set the properties
     '''
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         Rectangle.number_of_instances += 1
         self.__width = width

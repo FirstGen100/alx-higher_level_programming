@@ -6,7 +6,7 @@ Import the function.
 
 Test the parameters.
 
-	>>> print(matrix([[1, 2], [3, 4]], [1, 2], [3, 4]]))
+	>>> print(matrix([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
 	[[7, 10], [15, 22]]
 
 	>>> print(matix([[1, 2]], [[1, 2], [3, 4]]))

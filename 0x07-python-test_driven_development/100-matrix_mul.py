@@ -14,15 +14,15 @@ def matrix_mul(m_a, m_b):
     elif not all(isinstance(row, list) for row in m_b):
         raise TypeError('m_b must be a list of lists')
 
-    if not m_a:
+    if not len(m_a) == 0:
         raise ValueError("m_a can't be empty")
-    if not m_b:
+    if not len(m_b) == 0:
         raise ValueError("m_b can't be empty")
     
     if not all(isinstance(num, (int, float)) for row in m_a for num in row):
         raise TypeError('m_a should contain only integers or floats')
     if not all(isinstance(num, (int, float)) for row in m_b for num in row):
-        raise TypeError('m_b should only contain integers or floats')
+        raise TypeError('m_b should contain only integers or floats')
 
     row_s_a = len(m_a[0])
     row_s_b = len(m_b[0])

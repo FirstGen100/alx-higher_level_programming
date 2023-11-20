@@ -47,3 +47,12 @@ Traceback (most recent call last):
 ...
 TypeError: div must be a number
 
+>>> matrix = (1, 2, 3)
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix = [[1, 2, 3]]
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0, 0.0]]

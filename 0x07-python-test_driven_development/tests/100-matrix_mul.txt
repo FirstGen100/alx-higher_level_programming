@@ -13,7 +13,7 @@ Test the parameters.
 	[[7, 10]]
 
 Test values:
-	>>> print(lazy([[], [3, 4]], [[1, 2]]))
+	>>> print(matrix([[], [3, 4]], [[1, 2]]))
 	Traceback (most recent call last):
 	ValueError: m_a can't be empty
 	>>> print(matrix([[(1,)], [[1, 2], [3, 4]]]))

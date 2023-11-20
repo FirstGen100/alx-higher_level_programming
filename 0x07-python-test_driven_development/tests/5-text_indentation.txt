@@ -10,7 +10,7 @@ Test the parameters.
 	>>> text_indentation(2)
 	Traceback (most recent call last):
 	...
-	TypeError: 'text must be a string'
+	TypeError: text must be a string
 
 	>>> text_indentatation().
 	Traceback (most recent call last):

@@ -2,7 +2,10 @@
 '''
 function that prints my name is <firstname><lastname>
 '''
+
+
 def say_my_name(first_name, last_name=''):
+    '''function to print names'''
     if type(first_name) != str:
         raise TypeError('first_name must be a string')
     if type(last_name) != str:

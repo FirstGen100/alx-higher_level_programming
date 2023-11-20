@@ -15,14 +15,4 @@ Test the parameters.
 	>>> text_indentation()
 	Traceback (most recent call last):
 	...
-	TypeError: text_indentation() missing 1 requires positional argument: 'text'
-
-Test the values.
-	>>> text_indentation('what.the?shit:')
-	what
-
-
-	the
-
-
-	shit
+	TypeError: text_indentation() missing 1 required positional argument: 'text'

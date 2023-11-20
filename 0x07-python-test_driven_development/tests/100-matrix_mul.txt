@@ -1,0 +1,13 @@
+Test for the module ```100-matrix_mul``` function ```matrix_mul```
+====================================================================
+Import the function.
+
+>>> matrix = __import__('100-matrix_mul').matrix_mul
+
+Test the parameters.
+
+	>>> print(matrix([[1, 2], [3, 4]], [1, 2], [3, 4]]))
+	[[7, 10], [15, 22]]
+
+	>>> print(matix([[1, 2]], [[3, 4], [5, 6]]))
+	[[13, 16]]

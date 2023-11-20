@@ -3,7 +3,9 @@
     a function to add 2 integers
 '''
 
+
 def add_integer(a, b=98):
+    '''function to add 2 ints'''
     if type(a) == float or type(a) == int:
         a = int(a)
     else:

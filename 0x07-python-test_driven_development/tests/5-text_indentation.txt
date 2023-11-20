@@ -1,0 +1,27 @@
+Tests for the module ```5-text_indentation``` for function ```text_indentation```
+====================================================================================
+Import the function
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test the parameters.
+	>>> text_indentation('text')
+
+	>>> text_indentation(2)
+	Traceback (most recent call last):
+	...
+	TypeError: ('text must be a string')
+
+	>>> text_indentatation().
+	Traceback (most recent call last):
+	...
+	TypeError: text_indentation() missing 1 requires positional argument: 'text'
+
+Test the values.
+	>>> text_indentation('what.the?shit:')
+	what
+
+
+	the
+
+
+	shit

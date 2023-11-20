@@ -6,12 +6,14 @@ def text_indentation(text):
     '''function that formats text'''
     if not isinstance(text, str):
         raise TypeError('text must be a string')
-    result = ''
-    for char in text:
-        if char in ['.', '?', ':']:
-            result +=  char + '\n\n'
-            continue
-        else:
-            result += char
-    result.strip()
-    print(result, end='')
+    result = []
+    text = list(text)
+    for char in range(0, len(text)):
+        result.append(text[char])
+        if text[char] == '.':
+            result.append('\n\n')
+        if text[char] == '?':
+            result.append('\n\n')
+        if text[char] == ':':
+            result.append('\n\n')
+    print(''.join(result), end='')

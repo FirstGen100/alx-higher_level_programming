@@ -6,10 +6,11 @@ def text_indentation(text):
     '''function that formats text'''
     if not isinstance(text, str):
         raise TypeError('text must be a string')
+    text = text.strip()
     result = ''
     for char in text:
         if char in ['.', '?', ':']:
             result += '\n\n'
         else:
             result += char
-    print(result.strip())
+    print()

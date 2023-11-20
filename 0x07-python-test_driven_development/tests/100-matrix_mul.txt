@@ -13,11 +13,9 @@ Test the parameters.
 	[[7, 10]]
 
 Test values:
-	>>> print(matrix([[[]], [[1, 2], [3, 4]]])
+	>>> print(lazy([[], [3, 4]], [[1, 2]]))
 	Traceback (most recent call last):
-	...
 	ValueError: m_a can't be empty
-
 	>>> print(matrix([[(1,)], [[1, 2], [3, 4]]]))
 	...
 	TypeError: m_a should contain only integers or floats

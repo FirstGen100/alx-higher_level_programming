@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-'''function that returns json object(string)'''
 import json
+
+
+'''function that returns json object(string)'''
 
 
 def to_json_string(my_obj):

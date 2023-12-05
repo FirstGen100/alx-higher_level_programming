@@ -32,3 +32,5 @@ Test values:
 	Traceback (most recent call last):
 	...
 	ValueError: m_a and m_b can't be multiplied
+
+	>>> print(matrix([[()], [[1, 2]]]

@@ -1,4 +1,4 @@
-#!usr/binython3
+#!usr/bin/python3
 '''
 functionreturns dictionary desc wth smp;e data struct for json srialisation'''
 

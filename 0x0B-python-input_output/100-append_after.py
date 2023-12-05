@@ -5,10 +5,10 @@
 def append_after(filename='', search_string='', new_string=''):
     '''insert text to file after string'''
     with open(filename, 'r') as file:
-        line = file.readlines()
+        lines = file.readlines()
 
     with open(filename, 'w') as file:
-        for l in line:
+        for line in lines:
             file.write(l)
-            if search_string in l:
+            if search_string in line:
                 file.write(new_string)

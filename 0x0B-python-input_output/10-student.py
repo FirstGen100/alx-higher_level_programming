@@ -14,4 +14,5 @@ class Student:
         if attr is None:
             return self.__dict__
         else:
-            return {attr: getattr(self, attr) for attr in attr if hasattr(self, attr)}
+            return {attr: getattr(self, attr) for attr in attr if
+                    hasattr(self, attr)}

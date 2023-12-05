@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''making rhe pascals triangle'''
 
 
 def pascal_triangle(n):

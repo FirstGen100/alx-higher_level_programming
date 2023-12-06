@@ -108,7 +108,7 @@ class Rectangle(Base):
         '''returns dict representation of a rectangle'''
         args = ['x', 'y', 'id', 'height', 'width']
         new = {}
-        for key  in args:
+        for key in args:
             value = getattr(self, key)
             new.update({key: value})
         return new

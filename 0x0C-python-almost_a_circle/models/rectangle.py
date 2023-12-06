@@ -94,8 +94,12 @@ class Rectangle(Base):
                                                        self.__y, self.__width,
                                                        self.__height)
 
-    def update(self, *args):
-        '''assigns an agument to each attribute'''
+    def update(self, *args, **kwargs):
+        '''
+        assigns an agument to each attribute
         Args = ('id', 'width', 'height', 'x', 'y')
         for i, arg in enumerate(args):
             setattr(self, Args[i], arg)
+        '''
+        for key, value in kwargs.items():
+            setattr(self, key, value)

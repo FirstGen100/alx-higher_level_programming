@@ -28,5 +28,11 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         '''assigns attributes'''
+        try:
+            Args = ('id', 'size', 'x', 'y')
+            for i, arg in enumerate(args):
+                setattr(self, Args[i], arg)
+        except TypeError:
+            pass
         for key, value in kwargs.items():
             setattr(self, key, value)

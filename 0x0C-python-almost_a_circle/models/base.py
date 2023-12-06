@@ -22,7 +22,7 @@ class Base:
         if list_dictionaries is None:
             return '[]'
         elif any(type(i) != dict for i in list_dictionaries):
-            pass
+            raise ValueError
         else:
             return json.dumps(list_dictionaries)
     

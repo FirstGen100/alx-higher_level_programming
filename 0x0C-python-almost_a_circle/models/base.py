@@ -19,17 +19,23 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         '''convert to json string'''
-        if list_dictionaries is None or len(list_dictionaries) == 0:
+        if list_dictionaries is None:
             return '[]'
+        elif any(type(i) != dict for i in list_dictionaries):
+            pass
         else:
-            return (json.dumps(list_dictionaries))
+            return json.dumps(list_dictionaries)
     
     @staticmethod
     def save_to_file(cls, list_objs):
         '''writes json string to file'''
-        if list_objs:
-            lists = [obj.to_dictionary() for obj in list_objs]
+        if list_objs is None or list_objs == []:
+            new = []
         else:
-            lists = []
-        with open(cls.__name__ + '.json', 'w') as file:
-            file.write(cls.to_json_string(lists))
+            f = type(list_objs[0])
+            if any(type(i) != f for i in list_objs):
+                pass
+            new = [i.to_dictionary() for i in list_objs]
+        filename = cls.__name__ + '.json'
+        with open(filename, 'w') as file:
+            file.write(cls.to_json_string(new))

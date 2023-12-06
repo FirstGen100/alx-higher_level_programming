@@ -1,39 +1,47 @@
 #!/usr/bin/python3
-'''Rectangle class inheriting base class'''
+'''class rectagle inheritig form base'''
 
 
-from models.base import Base
+from . import Base
 
 
 class Rectangle(Base):
     '''class rectangle'''
     def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init__(id)
+        super.__init__()
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
 
-    def get_width(self):
-        return self.__width
+    @property
+    def width(self):
+        self.__width = width
 
-    def set_width(self, value):
+    @width.setter
+    def width(self, value):
         self.__width = value
 
-    def get_height(self):
-        return self.__height
+    @property
+    def height(self):
+        self.__height = height
 
-    def set_height(self, value):
-        self.__heigth = value
+    @height.setter
+    def height(self, value):
+        self.__height = value
 
-    def get_x(self):
-        return self.__x
+    @property
+    def x(self):
+        self.__x = x
 
-    def set_x(self, value):
+    @x.setter
+    def x(self, value):
         self.__x = value
 
-    def get_y(self):
-        return self.__y
+    @property
+    def y(self):
+        self.__y = y
 
-    def set_y(self, value):
+    @y.setter
+    def y(self, value):
         self.__y = value

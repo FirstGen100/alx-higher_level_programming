@@ -82,7 +82,7 @@ class Rectangle(Base):
         '''display the rectangle as #'''
         print('\n' * self.__y, end="")
         for i in range(self.__height):
-            print('' * self.__x, end='')
+            print(" " * self.__x, end='')
             for j in range(self.__width):
                 print('#', end='')
             print()

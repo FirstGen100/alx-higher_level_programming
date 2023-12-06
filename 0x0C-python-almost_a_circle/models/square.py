@@ -25,3 +25,8 @@ class Square(Rectangle):
         '''overwride str'''
         return '[Square] ({}) {}/{} - {}'.format(self.id, self.x, self.y,
                                                  self.size)
+
+    def update(self, *args, **kwargs):
+        '''assigns attributes'''
+        for key, value in kwargs.items():
+            setattr(self, key, value)
